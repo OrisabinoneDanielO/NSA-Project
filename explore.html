@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="Images/logo.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NSA Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="Images/logo.png" alt="" /></a>
+        <div class="nav-links" id="MenuItems">
+          <i class="fa fa-times" onclick="menutoggle()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="menutoggle()"></i>
+      </nav>
+      <h1>Explore Us</h1>
+    </section>
+    <!--------------Explore Us Content----->
+
+    <!-----------------FOOTER--------------------->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
+        impedit quam provident.Lorem ipsum dolor sit amet consectetur<br />
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
+        impedit quam provident.
+      </p>
+      <div class="icons">
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-whatsapp"></i>
+        <i class="fa fa-youtube"></i>
+      </div>
+      <p>Copyright @ 2025 - All Rights Reserved.</p>
+    </section>
+    <!-----------------JAVASCRIPT FOR TOGGLE MENU--------------------->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "300px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
